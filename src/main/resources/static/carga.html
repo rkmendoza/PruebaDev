@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cargar de archivo CSV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="/js/ajaxCargaCsv.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+				<h3>Cargar archivo CSV</h3>
+				<form id="uploadFileForm">
+					<div class="form-group">
+						<input type="file" class="form-control" 
+								placeholder="" id="csvfile" name="csvfile" required></input>
+					</div>
+					<button type="submit" class="btn btn-danger" id="btnUploadFileSubmit">Enviar</button>
+				</form>
+				<div id="response" style="display:none">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="btn btn-primary" href="/index.html">Productos</a>
+			</li>
+		</ul>
+		<hr>
+	</div>
+</body>
+</html>
